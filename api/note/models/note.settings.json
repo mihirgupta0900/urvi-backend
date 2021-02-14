@@ -1,0 +1,31 @@
+{
+  "kind": "collectionType",
+  "collectionName": "notes",
+  "info": {
+    "name": "note"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "notes_category": {
+      "model": "notes-category",
+      "via": "notes"
+    },
+    "body": {
+      "type": "richtext"
+    },
+    "date_published": {
+      "type": "date"
+    },
+    "notes_author": {
+      "via": "notes",
+      "model": "notes-author"
+    }
+  }
+}

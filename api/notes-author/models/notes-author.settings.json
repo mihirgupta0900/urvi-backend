@@ -1,0 +1,21 @@
+{
+  "kind": "collectionType",
+  "collectionName": "notes_authors",
+  "info": {
+    "name": "notes_author"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "notes": {
+      "collection": "note",
+      "via": "notes_author"
+    }
+  }
+}

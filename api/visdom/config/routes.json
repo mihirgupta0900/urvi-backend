@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/visdoms",
+      "handler": "visdom.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/visdoms/count",
+      "handler": "visdom.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/visdoms/:id",
+      "handler": "visdom.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/visdoms",
+      "handler": "visdom.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/visdoms/:id",
+      "handler": "visdom.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/visdoms/:id",
+      "handler": "visdom.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

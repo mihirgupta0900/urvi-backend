@@ -1,0 +1,23 @@
+{
+  "kind": "collectionType",
+  "collectionName": "sidemenuitems",
+  "info": {
+    "name": "sidemenuitem"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "display": {
+      "type": "string"
+    },
+    "link": {
+      "type": "string"
+    },
+    "order": {
+      "type": "integer"
+    }
+  }
+}

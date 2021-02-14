@@ -1,0 +1,21 @@
+{
+  "kind": "collectionType",
+  "collectionName": "notes_categories",
+  "info": {
+    "name": "notes_category"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "notes": {
+      "via": "notes_category",
+      "collection": "note"
+    }
+  }
+}
